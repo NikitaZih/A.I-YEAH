@@ -18,13 +18,16 @@ public class AIController : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if(Physics.Raycast(ray, out RaycastHit hit))
-            SetAITargetLocation(hit.point);
+
+            if (Physics.Raycast(ray, out RaycastHit hit))
+            {
+                SetAITargetLocation(hit.point);
+            }
         }
     }
 
     private void SetAITargetLocation(Vector3 targetLocation)
     {
-
+        _navMeshAgent.SetDestination(targetLocation);
     }
 }
