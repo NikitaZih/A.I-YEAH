@@ -3141,6 +3141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b0149aed2d3b44eb56eb48cdb0f084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherPlayer: {fileID: 701263140}
   timer: 0
   wanderTime: 5
 --- !u!1001 &1736661797
