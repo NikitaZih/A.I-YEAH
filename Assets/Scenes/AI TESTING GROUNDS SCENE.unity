@@ -232,6 +232,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6330471925307151564, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330471925307151564, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6626895034072280618, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -303,8 +311,8 @@ GameObject:
   m_Name: Hedge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &67966850
 BoxCollider:
@@ -377,8 +385,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67966849}
   m_LocalRotation: {x: -0, y: -0.7093722, z: -0, w: 0.70483404}
-  m_LocalPosition: {x: -2.91, y: 0.77, z: -13.8899975}
-  m_LocalScale: {x: 0.99999994, y: 2.065091, z: 12.913}
+  m_LocalPosition: {x: -2.9100056, y: 0.77, z: -13.889996}
+  m_LocalScale: {x: 0.9999999, y: 2.065091, z: 12.912999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -400,8 +408,8 @@ GameObject:
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &267596664
 Transform:
@@ -497,8 +505,8 @@ GameObject:
   m_Name: Statue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!136 &449579741
 CapsuleCollider:
@@ -877,8 +885,8 @@ GameObject:
   m_Name: 'Hedge '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &626267966
 BoxCollider:
@@ -951,8 +959,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626267965}
   m_LocalRotation: {x: -0, y: -0.7093722, z: -0, w: 0.70483404}
-  m_LocalPosition: {x: 0.9899995, y: 0.77, z: -13.859997}
-  m_LocalScale: {x: 0.99999994, y: 2.065091, z: 19.10545}
+  m_LocalPosition: {x: 0.98999596, y: 0.77, z: -13.859993}
+  m_LocalScale: {x: 0.9999999, y: 2.065091, z: 19.105446}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -974,8 +982,8 @@ GameObject:
   m_Name: 'Hedge '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &669799797
 BoxCollider:
@@ -1269,8 +1277,8 @@ GameObject:
   m_Name: Hedge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &790227974
 BoxCollider:
@@ -1464,8 +1472,8 @@ GameObject:
   m_Name: Backpack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &824299044
 Transform:
@@ -1854,8 +1862,8 @@ GameObject:
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &944897382
 BoxCollider:
@@ -2147,8 +2155,8 @@ GameObject:
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1093382624
 Transform:
@@ -2439,8 +2447,8 @@ GameObject:
   m_Name: 'Hedge '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1321789109
 BoxCollider:
@@ -2536,8 +2544,8 @@ GameObject:
   m_Name: 'Hedge '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1329404529
 BoxCollider:
@@ -2633,8 +2641,8 @@ GameObject:
   m_Name: goggles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1343368553
 Transform:
@@ -2731,8 +2739,8 @@ GameObject:
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!135 &1367222819
 SphereCollider:
@@ -2822,6 +2830,14 @@ PrefabInstance:
     - target: {fileID: 6330471925307151564, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
       propertyPath: m_Name
       value: Tree (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330471925307151564, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330471925307151564, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6626895034072280618, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3119,6 +3135,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6330471925307151564, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330471925307151564, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6626895034072280618, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3190,8 +3214,8 @@ GameObject:
   m_Name: 'Hedge '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1750547620
 BoxCollider:
@@ -3287,8 +3311,8 @@ GameObject:
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1926499296
 Transform:
@@ -3384,8 +3408,8 @@ GameObject:
   m_Name: 'Hedge '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1957335495
 BoxCollider:
@@ -3458,8 +3482,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957335494}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.04, y: 0.77, z: -5.200001}
-  m_LocalScale: {x: 1, y: 2.065091, z: 17.547695}
+  m_LocalPosition: {x: 10.039993, y: 0.77, z: -5.199997}
+  m_LocalScale: {x: 1.0000001, y: 2.065091, z: 17.547693}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3481,8 +3505,8 @@ GameObject:
   m_Name: 'Hedge '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1986663547
 BoxCollider:
@@ -3555,8 +3579,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986663546}
   m_LocalRotation: {x: -0, y: -0.7093722, z: -0, w: 0.70483404}
-  m_LocalPosition: {x: 0.59000015, y: 0.77, z: 3.0299988}
-  m_LocalScale: {x: 1, y: 2.065091, z: 19.900229}
+  m_LocalPosition: {x: 0.58999825, y: 0.77, z: 3.0300007}
+  m_LocalScale: {x: 0.9999999, y: 2.065091, z: 19.900229}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3670,6 +3694,14 @@ PrefabInstance:
     - target: {fileID: 6330471925307151564, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
       propertyPath: m_Name
       value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330471925307151564, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330471925307151564, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6626895034072280618, guid: 0fdd81351febe0a44b6a79ad6a707d11, type: 3}
       propertyPath: m_Materials.Array.data[0]
