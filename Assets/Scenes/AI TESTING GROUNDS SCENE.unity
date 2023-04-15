@@ -1092,6 +1092,8 @@ GameObject:
   - component: {fileID: 701263139}
   - component: {fileID: 701263138}
   - component: {fileID: 701263137}
+  - component: {fileID: 701263141}
+  - component: {fileID: 701263142}
   m_Layer: 0
   m_Name: Character 2
   m_TagString: Untagged
@@ -1108,7 +1110,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 701263136}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -1180,6 +1182,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &701263141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701263136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b0149aed2d3b44eb56eb48cdb0f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  otherPlayer: {fileID: 1702240687}
+  timer: 0
+  wanderTime: 5
+--- !u!195 &701263142
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701263136}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &763498743
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,7 +3057,9 @@ GameObject:
   - component: {fileID: 1702240685}
   - component: {fileID: 1702240684}
   - component: {fileID: 1702240688}
+  - component: {fileID: 1702240690}
   - component: {fileID: 1702240689}
+  - component: {fileID: 1702240691}
   m_Layer: 0
   m_Name: Character 1
   m_TagString: Untagged
@@ -3144,6 +3185,39 @@ MonoBehaviour:
   otherPlayer: {fileID: 701263140}
   timer: 0
   wanderTime: 5
+--- !u!114 &1702240690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702240683}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655e64a2d3855694a9a61172a35091ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 1
+  sprintSpeed: 4
+  walkSpeed: 2
+  mouseSensitivity: 2
+  jumpHeight: 3
+--- !u!54 &1702240691
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702240683}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1736661797
 PrefabInstance:
   m_ObjectHideFlags: 0
