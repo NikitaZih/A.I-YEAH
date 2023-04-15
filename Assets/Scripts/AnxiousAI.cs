@@ -20,7 +20,6 @@ public class AnxiousAI : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(transform.position, Player.transform.position);
-        Debug.Log("Distance:" + distance);
 
 
 
