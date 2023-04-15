@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class AIController : MonoBehaviour
 {
     private NavMeshAgent _navMeshAgent;
-    // Start is called before the first frame update
+    public float timer, wanderTime;
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
@@ -23,10 +23,18 @@ public class AIController : MonoBehaviour
                 SetAITargetLocation(hit.point);
             }
         }
+        Wander();
     }
 
 private void SetAITargetLocation(Vector3 targetLocation)
     {
         _navMeshAgent.SetDestination(targetLocation);
+    }
+
+    private void Wander()
+    {
+        Vector2 wanderTarget = Random.insideUnitCircle * wanderTime;
+        Vector3 wanderPos3D = new Vector3(x: transform.position.x + wanderTarget.x, transform.position.y, z: transform.position.z + wanderTarget.y);
+        SetAITargetLocation(wanderPos3D);
     }
 }
