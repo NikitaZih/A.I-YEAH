@@ -27,6 +27,6 @@ public class AIController : MonoBehaviour
 
 private void SetAITargetLocation(Vector3 targetLocation)
     {
-        -_navMeshAgent.SetDestination(targetLocation);
+        _navMeshAgent.SetDestination(targetLocation);
     }
 }
