@@ -23,6 +23,8 @@ public class AIController : MonoBehaviour
                 SetAITargetLocation(hit.point);
             }
         }
+        timer += Time.deltaTime;
+
         Wander();
     }
 
@@ -33,8 +35,12 @@ private void SetAITargetLocation(Vector3 targetLocation)
 
     private void Wander()
     {
-        Vector2 wanderTarget = Random.insideUnitCircle * wanderTime;
-        Vector3 wanderPos3D = new Vector3(x: transform.position.x + wanderTarget.x, transform.position.y, z: transform.position.z + wanderTarget.y);
-        SetAITargetLocation(wanderPos3D);
+        if (timer >= wanderTime)
+        {
+            Vector2 wanderTarget = Random.insideUnitCircle * wanderTime;
+            Vector3 wanderPos3D = new Vector3(x: transform.position.x + wanderTarget.x, transform.position.y, z: transform.position.z + wanderTarget.y);
+            SetAITargetLocation(wanderPos3D);
+            timer= 0;
+        }
     }
 }
