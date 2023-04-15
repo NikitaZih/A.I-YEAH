@@ -6,15 +6,53 @@ using UnityEngine.AI;
 public class AIController : MonoBehaviour
 {
     private NavMeshAgent _navMeshAgent;
+    public Transform otherPlayer;
+
     public float timer, wanderTime;
+
+    public enum State
+    {
+        FindCharacter,
+        Wander,
+        Idle
+    }
+
+    private State currentState;
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
+        currentState = State.FindCharacter;
     }
 
     // Update is called once per frame
     void Update()
     {
+        switch (currentState)
+        {
+            case State.FindCharacter:
+
+                SetAITargetLocation(otherPlayer.position);
+
+                if(_navMeshAgent.remainingDistance <1f && _navMeshAgent.remainingDistance > 0.5f)
+                        {
+                    currentState = State.Wander;
+                }
+
+                break;
+
+            case State.Wander:
+
+                timer += Time.deltaTime;
+
+                Wander();
+
+                break;
+
+                case State.Idle:
+
+                break;
+        }
+
         if(Input.GetMouseButtonDown(0))
                 {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
