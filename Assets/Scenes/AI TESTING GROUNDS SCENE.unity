@@ -3255,6 +3255,7 @@ GameObject:
   - component: {fileID: 1702240690}
   - component: {fileID: 1702240689}
   - component: {fileID: 1702240691}
+  - component: {fileID: 1702240692}
   m_Layer: 0
   m_Name: Character 1
   m_TagString: Untagged
@@ -3372,7 +3373,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702240683}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74b0149aed2d3b44eb56eb48cdb0f084, type: 3}
   m_Name: 
@@ -3413,6 +3414,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1702240692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702240683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dafad94d18eb1743ab73f0037f410a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 701263136}
+  EnemyDistanceRun: 4
 --- !u!1001 &1736661797
 PrefabInstance:
   m_ObjectHideFlags: 0
