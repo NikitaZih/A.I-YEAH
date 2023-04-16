@@ -6177,7 +6177,7 @@ MonoBehaviour:
   - {fileID: 185832654}
   - {fileID: 1610248231}
   numberOfPoints: 6
-  speed: 10
+  speed: 5
 --- !u!4 &1826472514
 Transform:
   m_ObjectHideFlags: 0
