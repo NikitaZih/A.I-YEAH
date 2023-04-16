@@ -14,8 +14,9 @@ public class PathWalkAI : MonoBehaviour
     public GameObject waypoint7;
     public GameObject waypoint8;
     private Queue<GameObject> waypoints = new Queue<GameObject>();
-    private Vector3 waypointPos;
+    public Vector3 waypointPos;
     private GameObject nextWaypoint;
+    private float shoveForce = 700f;
 
     private NavMeshAgent _navMeshAgent;
     // Start is called before the first frame update
@@ -33,15 +34,18 @@ public class PathWalkAI : MonoBehaviour
         NextWaypoint();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Entered!");
         NextWaypoint();
+    }
+
+    private void OnCollisionEnter(Collision collision) 
+    {
+        Debug.Log("Collided!");
+        collision.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+        collision.rigidbody.useGravity = true;
+        collision.rigidbody.AddRelativeForce(new Vector3 (0, shoveForce,0));
     }
 
     public void NextWaypoint()
@@ -52,7 +56,7 @@ public class PathWalkAI : MonoBehaviour
         waypointPos = nextWaypoint.transform.position;
         SetAiTargetLocation(waypointPos);
     }
-    private void SetAiTargetLocation(Vector3 targetLocation)
+    public void SetAiTargetLocation(Vector3 targetLocation)
     {
         _navMeshAgent.SetDestination(targetLocation);
     }
